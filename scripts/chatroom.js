@@ -1,12 +1,13 @@
-createButton = function(div, text) {
+createButton = function(div, text, centerx, centery, width, height) {
   var button = document.createElement("button");
-  button.innerHtml = text;
+  button.textContent = text;
   
-  button.style.display = "block";
-  button.style.margin = "auto";
-  button.style.width = "50%";
-  button.style.height = "10%";
-  button.style.fontSize = "50%";
+  if(centerx === true) {
+    button.style.display = "block";
+    button.style.margin = "auto";
+  };
+  button.style.width = width;
+  button.style.height = height;
   
   div.appendChild(button);
   return button;
@@ -17,6 +18,6 @@ window.onload = function() {
   div.style.width = "50%";
   div.style.height = "50%";
   
-  var login = createButton(div, "Login")
+  var login = createButton(div, "Login", true, false, "50%", "50%");
   //var anon = createButton(div, "Continue as guest")
 };
