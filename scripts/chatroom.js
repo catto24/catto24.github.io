@@ -1,19 +1,18 @@
-createButton = function(div, text, centerx, centery, width, height) {
+createButton = function(div, text, centerx, centery, offsetx, offsety, width, height) {
   var button = document.createElement("button");
   button.textContent = text;
   
-  //button.style.position = "absolute";
-  button.style.display = "block";
+  button.style.position = "absolute";
   button.style.transform = ""
   if(centerx === true) {
-    button.style.left = "50%";
+    button.style.left = String(50+offsetx)+"%";
     button.style.transform += "translateX(-50%)";
   };
   if(centery === true) {
     if(centerx === true) {
       button.style.transform += " ";
     }
-    button.style.top = "50%";
+    button.style.top = String(50+offsety)+"%";
     button.style.transform += "translateY(-50%)";
   };
   button.style.width = width;
