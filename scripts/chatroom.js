@@ -28,6 +28,6 @@ window.onload = function() {
   div.style.height = "50%";
   div.style.position = "relative";
   
-  var login = createButton(div, "Login", true, true, "50%", "10%");
+  var login = createButton(div, "Login", true, true, "12.5%", "10%");
   //var anon = createButton(div, "Continue as guest")
 };
