@@ -12,7 +12,7 @@ createButton = function(div, text) {
 window.onload = function() {
   var div = document.getElementById("chatroom");
   div.style.width = "50%";
-  div.stlye.width = "50%";
+  div.style.height = "50%";
   
   var login = createButton(div, "Login")
   var anon = createButton(div, "Continue as guest")
