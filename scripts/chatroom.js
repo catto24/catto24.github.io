@@ -3,6 +3,7 @@ createButton = function(div, text, centerx, centery, width, height) {
   button.textContent = text;
   
   button.style.position = "absolute";
+  button.style.display = "block";
   button.style.transform = ""
   if(centerx === true) {
     button.style.left = "50%";
@@ -29,5 +30,5 @@ window.onload = function() {
   div.style.position = "relative";
   
   var login = createButton(div, "Login", true, true, "12.5%", "10%");
-  //var anon = createButton(div, "Continue as guest")
+  var anon = createButton(div, "Continue as guest", true, true, "50%", "10%");
 };
