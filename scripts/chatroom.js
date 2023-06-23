@@ -4,6 +4,8 @@ createButton = function(div, text) {
   
   button.style.display = "block";
   button.style.margin = "auto";
+  button.style.width = "50%";
+  button.style.height = "10%";
   
   div.appendChild(button);
   return button;
