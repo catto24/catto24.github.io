@@ -6,6 +6,7 @@ createButton = function(div, text) {
   button.style.margin = "auto";
   button.style.width = "50%";
   button.style.height = "10%";
+  button.style.fontSize = "50%";
   
   div.appendChild(button);
   return button;
