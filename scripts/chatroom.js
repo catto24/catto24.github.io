@@ -1,4 +1,4 @@
-createButton = function(div, text, centerx, centery, offsetx, offsety, width, height) {
+createButton = function(div, text, centerx, centery, offsetx, offsety, width = null, height = null) {
   var button = document.createElement("button");
   button.textContent = text;
   
@@ -15,8 +15,10 @@ createButton = function(div, text, centerx, centery, offsetx, offsety, width, he
     button.style.top = String(50+offsety)+"%";
     button.style.transform += "translateY(-50%)";
   };
-  button.style.width = width;
-  button.style.height = height;
+  if(width) {
+    button.style.width = width;
+    button.style.height = height;
+  }
   
   div.appendChild(button);
   return button;
@@ -28,6 +30,6 @@ window.onload = function() {
   div.style.height = "50%";
   div.style.position = "relative";
   
-  var login = createButton(div, "Login", true, true, "12.5%", "10%");
-  var anon = createButton(div, "Continue as guest", true, true, "50%", "10%");
+  var login = createButton(div, "Login", true, true, 0, 2.5);
+  var anon = createButton(div, "Continue as guest", true, true, 0, 2.5);
 };
