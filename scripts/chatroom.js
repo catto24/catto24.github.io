@@ -2,7 +2,7 @@ createButton = function(div, text, centerx, centery, width, height) {
   var button = document.createElement("button");
   button.textContent = text;
   
-  button.style.position = "absolute";
+  //button.style.position = "absolute";
   button.style.display = "block";
   button.style.transform = ""
   if(centerx === true) {
