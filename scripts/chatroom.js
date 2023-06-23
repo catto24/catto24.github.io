@@ -3,13 +3,17 @@ createButton = function(div, text, centerx, centery, width, height) {
   button.textContent = text;
   
   button.style.position = "absolute";
+  button.style.transform = ""
   if(centerx === true) {
     button.style.left = "50%";
-    button.style.transform = "translateX(-50%)";
+    button.style.transform += "translateX(-50%)";
   };
-  if(centerx === true) {
+  if(centery === true) {
+    if(centerx === true) {
+      button.style.transform += " ";
+    }
     button.style.top = "50%";
-    button.style.transform = "translateY(-50%)";
+    button.style.transform += "translateY(-50%)";
   };
   button.style.width = width;
   button.style.height = height;
