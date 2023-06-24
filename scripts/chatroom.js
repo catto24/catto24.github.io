@@ -1,3 +1,5 @@
+var div = document.getElementById("chatroom");
+var scene = "choice";
 createButton = function(div, text, centerx, centery, offsetx, offsety, width = null, height = null) {
   var button = document.createElement("button");
   button.textContent = text;
@@ -43,8 +45,6 @@ draw = function() {
 };
 
 window.onload = function() {
-  var div = document.getElementById("chatroom");
-  var scene = "choice";
   div.style.width = "50%";
   div.style.height = "50%";
   div.style.position = "relative";
