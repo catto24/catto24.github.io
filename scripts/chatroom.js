@@ -49,5 +49,5 @@ window.onload = function() {
   div.style.height = "50%";
   div.style.position = "relative";
   div.style.border = "2px solid white";
-  draw();
+  window.requestAnimationFrame(draw);
 }
