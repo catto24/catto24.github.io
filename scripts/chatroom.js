@@ -37,6 +37,7 @@ window.onload = function() {
     var anon = createButton(div, "Continue as guest", true, true, 0, 2.75);
     
     login.onclick = function() {
+      alert("fuck");
       scene = "login";
     }
   } else if(scene === "login") {
