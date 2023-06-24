@@ -33,6 +33,7 @@ draw = function() {
     
     login.onclick = function() {
       scene = "login";
+      window.requestAnimationFrame(draw);
     }
     scene = "choice1";
   } else if(scene === "login") {
