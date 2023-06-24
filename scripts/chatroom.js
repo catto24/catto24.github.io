@@ -41,7 +41,7 @@ draw = function() {
     text.style.textAlign = "center";
     scene = "login1";
   }
-  window.requestAnimationFrame();
+  window.requestAnimationFrame(draw);
 };
 
 window.onload = function() {
