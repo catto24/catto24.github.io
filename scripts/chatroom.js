@@ -24,6 +24,24 @@ createButton = function(div, text, centerx, centery, offsetx, offsety, width = n
   return button;
 }
 
+draw = function() {
+  if(scene === "choice") {
+    var login = createButton(div, "Login", true, true, 0, -2.75);
+    var anon = createButton(div, "Continue as guest", true, true, 0, 2.75);
+    
+    login.onclick = function() {
+      scene = "login";
+    }
+    scene = "choice1";
+  } else if(scene === "login") {
+    var text = document.createElement("h2");
+    text.textContent = "Expect this later :)";
+    text.style.textAlign = "center";
+    scene = "login1";
+  }
+  window.requestAnimationFrame();
+};
+
 window.onload = function() {
   var div = document.getElementById("chatroom");
   var scene = "choice";
@@ -31,18 +49,5 @@ window.onload = function() {
   div.style.height = "50%";
   div.style.position = "relative";
   div.style.border = "2px solid white";
-
-  if(scene === "choice") {
-    var login = createButton(div, "Login", true, true, 0, -2.75);
-    var anon = createButton(div, "Continue as guest", true, true, 0, 2.75);
-    
-    login.onclick = function() {
-      alert("fuck");
-      scene = "login";
-    }
-  } else if(scene === "login") {
-    var text = document.createElement("h2");
-    text.textContent = "Expect this later :)";
-    text.style.textAlign = "center";
-  }
-};
+  draw();
+}
