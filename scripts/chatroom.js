@@ -26,11 +26,22 @@ createButton = function(div, text, centerx, centery, offsetx, offsety, width = n
 
 window.onload = function() {
   var div = document.getElementById("chatroom");
+  var scene = "choice";
   div.style.width = "50%";
   div.style.height = "50%";
   div.style.position = "relative";
   div.style.border = "2px solid white";
-  
-  var login = createButton(div, "Login", true, true, 0, -2.75);
-  var anon = createButton(div, "Continue as guest", true, true, 0, 2.75);
+
+  if(scene === "choice") {
+    var login = createButton(div, "Login", true, true, 0, -2.75);
+    var anon = createButton(div, "Continue as guest", true, true, 0, 2.75);
+    
+    login.onclick = function() {
+      scene = "login";
+    }
+  } else if(scene === "login") {
+    var text = document.createElement("h2");
+    text.textContent = "Expect this later :)";
+    text.style.textAlign = "center";
+  }
 };
