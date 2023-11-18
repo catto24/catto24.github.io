@@ -20,7 +20,7 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    background-color: white;
+    background-color: #292C31;
     transition: background-color 500ms;
     border: 4px solid #111111;
      font-family: sans-serif;
@@ -40,5 +40,5 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #111111;
+    color: white;
 }
