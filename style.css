@@ -7,13 +7,13 @@ body {
   font-family: sans-serif;
 }
 a:link {
-  color: #33DCE4;
+  color: #EEEEEE;
 }
 a:visited {
-  color: #111111;
+  color: #EEEEEE;
 }
 a:hover {
-  color: #3389E4;
+  color: #FFFFFF;
 }
 nav {
   display: inline-block;
@@ -22,7 +22,7 @@ nav ul {
     list-style-type: none;
     background-color: #292C31;
     transition: background-color 500ms;
-    border: 4px solid #111111;
+    border: 4px solid #EEEEEE;
      font-family: sans-serif;
     font-weight: bold;
     padding: 16px;
@@ -40,5 +40,5 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
