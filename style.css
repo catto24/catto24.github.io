@@ -1,29 +1,27 @@
 /*YOU SHOULDNT BE HERE BUDDY*/
 
 body {
-  background-color: #292C31;
+  background-color: #06001b;
   font-size: 18px;
-  color: white;
+  color: #8c8c8c;
   font-family: sans-serif;
 }
 a:link {
-  color: #EEEEEE;
+  color: #8c8c8c;
 }
 a:visited {
-  color: #EEEEEE;
+  color: #8c8c8c;
 }
 a:hover {
-  color: #FFFFFF;
+  color: #c8c8c8;
 }
 nav {
   display: inline-block;
 }
 nav ul {
     list-style-type: none;
-    background-color: #292C31;
     transition: background-color 500ms;
-    border: 4px solid #EEEEEE;
-     font-family: sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
     padding: 16px;
     margin-bottom: 16px;
