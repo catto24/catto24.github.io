@@ -1,20 +1,17 @@
 <html>
 	<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   	<link rel="icon" type="image/x-icon" href="favicon.png">
     <title>catto's website: con's chatroom</title>
 	</head>
 	<body>
     <link rel="stylesheet" href="style.css">
-    <nav>
-      <ul style="padding-left: 0px;">
-        <li><a onclick="javascript:alert('hi');">│ </a></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="aboutme.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="youtube.html">YOUTUBE</a></li>
-        <li><a href="chatbox.html" style="color:aliceblue">MOORTAHC [made by con]</a></li>
-      </ul>
-    </nav>
+    <script>
+      $(function () {
+        $("#navbar").load("components/navbar.html");
+      });
+    </script>
+    <div id="navbar"></div>
     <h1>Expect greatness on this page soon.</h1>
     <h2>Actually, I wouldn't count on it. Chatrooms are hard af to make.</h2>
     <div id="chatroom"></div>

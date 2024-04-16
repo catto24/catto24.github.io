@@ -1,20 +1,17 @@
 <html>
 	<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	  <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>catto's website: contact</title>
 	</head>
 	<body>
     <link rel="stylesheet" href="style.css">
-    <nav>
-      <ul style="padding-left: 0px;">
-        <li><a onclick="javascript:alert('hi');">│ </a></li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="aboutme.html">ABOUT</a></li>
-        <li><a href="contact.html" style="color:aliceblue">TCATNOC</a></li>
-        <li><a href="youtube.html">YOUTUBE</a></li>
-<!--        <li><a href="chatbox.html">CHATROOM</a></li> -->
-      </ul>
-    </nav>
+    <script>
+      $(function () {
+        $("#navbar").load("components/navbar.html");
+      });
+    </script>
+    <div id="navbar"></div>
     <h2>contact</h2>
     <p>someone actually wants to talk to me?</p>
     <br>
