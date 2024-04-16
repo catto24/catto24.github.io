@@ -1,4 +1,6 @@
-# catto24.github.io
-moving from https://neocities.org/ to https://pages.github.io/.
-i just decided to because i wanted to
-you can't tell me what to do i'm the owner of this repository >:3
+## catto24.github.io
+idk man it's my website
+that's about it
+uh check it out if you want
+
+:shrug:
