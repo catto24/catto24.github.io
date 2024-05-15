@@ -3,4 +3,6 @@ idk man it's my website
 that's about it
 uh check it out if you want
 
-:shrug:
+#
+
+bing bong
