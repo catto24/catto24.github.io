@@ -1,10 +1,20 @@
 <nav>
   <ul style="padding-left: 0px">
-    <li><a onclick="joshywoshycolonthree('hi')" style="color: aliceblue">│ </a></li>
+    <li><a onclick="windowalert('hi')" style="color: aliceblue">│ </a></li>
     <li><a href="index.html">HOME</a></li>
     <li><a href="aboutme.html">ABOUT</a></li>
+    <li><a onclick="windowconfirm()">YOUTUBE</a></li>
     <li><a href="contact.html">CONTACT</a></li>
-    <li><a href="youtube.html">YOUTUBE</a></li>
     <!--        <li><a href="chatbox.html">CHATROOM</a></li> -->
   </ul>
 </nav>
+
+<script>
+  function windowconfirm() {
+      var confirmation = confirm("this will redir to youtube.com");
+      if (confirmation) {
+          window.location.href = "https://youtube.com/@catto24";
+      } else {
+      }
+  }
+  </script>
