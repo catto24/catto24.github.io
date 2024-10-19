@@ -23,6 +23,10 @@ body {
   background-color: #050505;
 }
 
+hr {
+  height: 10px;
+}
+
 a:link {
   color: #c4c4c4;
 }

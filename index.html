@@ -22,15 +22,50 @@
           $("#navbar").load("components/navbar.html");
         });
       </script>
-      <div id="navbar"></div>
+      <div id="navbar">
+        <nav>
+          <ul style="padding-left: 0px">
+            <li>
+              <a onclick="windowalert('uwu')" style="color: aliceblue">│ </a>
+            </li>
+            <li><a href="index.html" style="text-decoration: none">HOME</a></li>
+            <li>
+              <a href="aboutme.html" style="text-decoration: none">ABOUT</a>
+            </li>
+            <li>
+              <a onclick="windowconfirm('')" style="text-decoration: none"
+                >YOUTUBE</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" style="text-decoration: none">CONTACT</a>
+            </li>
+            <!--        <li><a href="chatbox.html">CHATROOM</a></li> -->
+            <li>
+              <a onclick="windowalert('owo')" style="color: aliceblue">│ </a>
+            </li>
+          </ul>
+        </nav>
+
+        <script>
+          function windowconfirm() {
+            var confirmation = confirm("this will redir to youtube.com");
+            if (confirmation) {
+              window.location.href = "https://youtube.com/@catto24";
+            } else {
+            }
+          }
+        </script>
+      </div>
       <main>
         <h2>bing bong</h2>
         <p>welcome to my website i guess</p>
         <a href="http://youtube.com/@catto24">
           check out my YouTube channel if you want idk i'm not your dad
         </a>
-        <div style="margin-bottom: 20px"></div>
-        <h3>interests</h3>
+        <div style="padding-bottom: 14px"></div>
+        <hr />
+        <h2>interests</h2>
         <a href="https://github.com/catto24">coding</a>
         <p>web-development</p>
         <p>gaming</p>
