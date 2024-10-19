@@ -5,17 +5,19 @@
 }
 
 .container {
-  background-color: #040016;
+  background-color: #141414;
   font-size: 80%;
-  color: #8c8c8c;
+  color: #c4c4c4;
   font-family: sans-serif;
   margin: 0 auto;
   width: 800px;
   max-width: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 body {
-  background-color: #141414;
+  background-color: #050505;
 }
 
 a:link {
