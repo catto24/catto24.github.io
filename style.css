@@ -5,7 +5,8 @@ body {
   font-size: 18px;
   color: #8c8c8c;
   font-family: sans-serif;
-  position: center;
+  margin: 0 auto;
+  max-width: 920px;
 }
 a:link {
   color: #8c8c8c;
