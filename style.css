@@ -24,7 +24,10 @@ body {
 }
 
 hr {
-  height: 10px;
+  width: 50%;
+  height: 5px;
+  color: #141414;
+  background-color: #141414;
 }
 
 a:link {
